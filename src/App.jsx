@@ -10,12 +10,15 @@ import { Route, Routes } from "react-router-dom";
 import ROUTES from "./config/routes/routes"
 import Home from './pages/home/Home';
 import MainLayout from './layout/MainLayout';
+import CategoryPage from './pages/category-page/CategoryPage';
 
 function App() {
   return (
     <Routes>
-      <Route element={<MainLayout />}>
-        <Route index path={ROUTES.HOME} element={<Home />} />
+      <Route path={ROUTES.HOME} element={<MainLayout />}>
+        <Route index element={<Home />} />
+        <Route path={ROUTES.CATEGORY_SLUG} element={<h1 >coming soon...</h1>} />
+        <Route path={`${ROUTES.CATEGORY_SLUG}/${ROUTES.SUB_CATEGORY_SLUG}`} element={<CategoryPage />} />
       </Route>
       <Route path="*" element={<h1>404</h1>} />
     </Routes>
