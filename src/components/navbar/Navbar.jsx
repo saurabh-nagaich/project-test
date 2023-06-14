@@ -1,8 +1,11 @@
 import React from 'react'
 import { Menubar } from 'primereact/menubar';
 import { InputText } from 'primereact/inputtext';
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
+    const navigate = useNavigate()
+
     const items = [
         {
             label: 'Subject',
@@ -15,22 +18,33 @@ function Navbar() {
                             label: 'Elementary',
                             items: [
                                 {
-                                    label: "Grade 1"
+                                    label: "Grade 1",
+                                    command: () => navigate(`math/grade_1`)
                                 },
                                 {
-                                    label: "Grade 2"
+                                    label: "Grade 2",
+                                    command: () => navigate(`math/grade_2`)
+
                                 },
                                 {
-                                    label: "Grade 3"
+                                    label: "Grade 3",
+                                    command: () => navigate(`math/grade_3`)
+
                                 },
                                 {
-                                    label: "Grade 4"
+                                    label: "Grade 4",
+                                    command: () => navigate(`math/grade_4`)
+
                                 },
                                 {
-                                    label: "Grade 5"
+                                    label: "Grade 5",
+                                    command: () => navigate(`math/grade_5`)
+
                                 },
                                 {
-                                    label: "Grade 6"
+                                    label: "Grade 6",
+                                    command: () => navigate(`math/grade_6`)
+
                                 },
                             ]
                         },
@@ -41,22 +55,28 @@ function Navbar() {
                     label: 'Science',
                     items: [
                         {
-                            label: "Grade k to 5"
+                            label: "Grade k to 5",
+                            command: () => navigate(`science/grade_k_to_5`)
                         },
                         {
-                            label: "Earth Science"
+                            label: "Earth Science",
+                            command: () => navigate(`science/earth_science`)
                         },
                         {
-                            label: "Physical Science"
+                            label: "Physical Science",
+                            command: () => navigate(`science/physical_science`)
                         },
                         {
-                            label: "Biology"
+                            label: "Biology",
+                            command: () => navigate(`science/biology`)
                         },
                         {
-                            label: "Chemisty"
+                            label: "Chemisty",
+                            command: () => navigate(`science/chemisty`)
                         },
                         {
-                            label: "Physics"
+                            label: "Physics",
+                            command: () => navigate(`science/physics`)
                         },
                     ]
                 },

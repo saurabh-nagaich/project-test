@@ -9,6 +9,9 @@ function CategoryPage() {
     return (
         <div className="CategoryPage">
             <HeroSection title={subCategoryId.toUpperCase().replace("_", " ")} />
+            <div className="Content py-5">
+                <p className="text-center ">Content will reflect soon...</p>
+            </div>
         </div>
     )
 }
