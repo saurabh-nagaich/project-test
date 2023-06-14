@@ -1,0 +1,12 @@
+.TabSection{
+    .TabArea{
+        .Tab{
+            background-color:#2a2b2d ;
+            border-radius: 8px;
+            transition: background-color .3s ease-in-out;
+            &:hover,&.ActiveTab{
+                background-color: #565A65;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.HeroSection{
+    background-color: #008545;
+    // background-image: url(https://w7.pngwing.com/pngs/195/337/png-transparent-three-dimensional-square-background-texture-angle-other.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 40vh;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
+}

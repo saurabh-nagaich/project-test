@@ -1,0 +1,23 @@
+.Card{
+    width:  18rem;
+    border-radius: 4px;
+    box-shadow: 2px 2px 12px #000;
+    transform: scale(1);
+    transition: box-shadow .2s ease-in-out,transform .2s ease-in-out;
+    .Image{
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        // width: 10re;
+        aspect-ratio: 16/9;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .Label{
+        color:#008545 ;
+    }
+    &:hover{
+        box-shadow: 2px 2px 25px #000;
+        transform: scale(1.1);
+    }
+}
