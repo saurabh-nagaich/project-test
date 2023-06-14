@@ -1,0 +1,26 @@
+.CategoryHeroContainer{
+    background: #2F3542;
+    .Image{
+        border-radius: 4px;
+        width: 15rem;
+        height: 20rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .AddedBy{
+        span{
+            color:#00ba60;
+        }
+    }
+    .Status{
+        background: #D8D8D8;
+        width: fit-content;
+        border-radius: 4px;
+        letter-spacing: .04rem;
+    }
+    .Description{
+        letter-spacing: .04rem;
+        font-weight: 600;
+    }
+}
